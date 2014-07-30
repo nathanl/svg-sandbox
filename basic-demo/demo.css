@@ -1,0 +1,45 @@
+rect {
+  fill: red;
+  stroke: blue;
+  stroke-width: 1px;
+}
+
+circle {
+  fill: blue;
+  fill-opacity: 0.5;
+  stroke: green;
+  stroke-width: 5px;
+}
+
+ellipse {
+  fill: green;
+  fill-opacity: 0.5;
+  stroke: black;
+  stroke-width: 5px;
+}
+
+ellipse.peon {
+  stroke-width: 1px;
+}
+
+ellipse#other {
+  fill: orange;
+}
+
+line {
+  stroke: black;
+  stroke-width: 15px;
+  stroke-linecap: round;
+}
+
+polygon {
+  fill: orange;
+  stroke: green;
+  stroke-width: 2px;
+}
+
+polyline {
+  fill: none;
+  stroke: blue;
+  stroke-width: 5px;
+}

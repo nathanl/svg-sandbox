@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<?xml-stylesheet href="demo.css" type="text/css"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- x and y give top left corner -->
+   <rect x="0" y="0" height="50%" width="50%" /> 
+
+  <!-- center point and radius -->
+   <circle cx="50%" cy="50%" r="20%" /> 
+
+  <!-- has x and y radius -->
+   <ellipse cx="50%" cy="50%" rx="20%" ry="10%" /> 
+
+  <!-- id and class work like in HTML -->
+   <ellipse id="other" class="peon" cx="30%" cy="30%" rx="20%" ry="10%" /> 
+
+  <!-- if no second point given, defaults to top left -->
+   <line x1="0%" y1="0%" x2="50%" y2="30%"/> 
+
+  <!-- an open shape -->
+  <polyline points="0,0 200,200 600,200" />
+
+  <!-- a closed shape - automatically connects last point to first -->
+  <polygon points="100,200 200,100 400,600" />
+
+  <!-- a star, copied from w3schools -->
+  <polygon points="200,110 140,298 290,178 110,178 260,298" />
+
+</svg>
+
