@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SVG Reuse Demo</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html" />
+    <style type="text/css">
+      .circle   .uno { stroke: orange; stroke-width: 5px; }
+      .circle-1 .uno { fill: blue; }
+      .circle-2 .uno { fill: red; }
+      .circle-3 .uno { fill: green; }
+    </style>
+  </head>
+  <body>
+    <!-- TEMPLATE -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="disc" viewbox="0 0 100 100">
+        <circle class="uno" cx="50" cy="50" r="40">
+      </symbol>
+    </svg>
+
+    <!-- USE TEMPLATE SEVERAL TIMES -->
+    <svg class="circle circle-1">
+      <use xlink:href="#disc">
+    </svg>
+
+    <svg class="circle circle-2">
+      <use xlink:href="#disc">
+    </svg>
+
+    <svg class="circle circle-3">
+      <use xlink:href="#disc">
+    </svg>
+  </body>
+</html>
